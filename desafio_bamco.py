@@ -29,6 +29,7 @@ limite = 1500
 extrato = ""
 numero_saques = 0
 LIMITE_SAQUES = 10
+repeticao = 0
 
 while True:
     opcao = input(menu)
@@ -40,6 +41,11 @@ while True:
             saldo += valor
             extrato += f"Deposito:R$ {valor:.2f}\n"
             print(extrato)
+        if valor <=0:
+            repeticao += 1
+            if repeticao == 3:
+                print("numero de tentaivas ultrapassou 3 conta bloqueada")
+                break
         else:
             print("operacção invalida")
 
