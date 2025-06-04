@@ -46,7 +46,7 @@ saldo = 0
 
 
 while True:
-    valor = int(input("gigite um valor ou [0] para depositar: "))
+    valor = int(input("digite um valor ou [0] para depositar: "))
     if valor == 0:
         print("fim da sessão")
         break
@@ -165,4 +165,10 @@ for numero in range(100):
     if numero % 2 == 0:
         continue
     print(numero, end=" ")
-    
+
+
+
+numero = int(input("digite um nunero: "))
+
+for x in range(numero):
+    print(x)

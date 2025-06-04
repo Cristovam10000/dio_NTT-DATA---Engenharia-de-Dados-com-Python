@@ -41,7 +41,7 @@ while True:
             saldo += valor
             extrato += f"Deposito:R$ {valor:.2f}\n"
             print(extrato)
-        if valor <=0:
+        elif valor <=0:
             repeticao += 1
             if repeticao == 3:
                 print("numero de tentaivas ultrapassou 3 conta bloqueada")
